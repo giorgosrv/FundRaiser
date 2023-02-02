@@ -1,0 +1,132 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FundRaiser
+build_property.RootNamespace = FundRaiser
+build_property.ProjectDir = C:\Users\rouva\Source\Repos\RegenerationAPI\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\rouva\Source\Repos\RegenerationAPI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Backers/Activity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFja2Vyc1xBY3Rpdml0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Backers/BackerProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFja2Vyc1xCYWNrZXJQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Backers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFja2Vyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Backers/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFja2Vyc1xEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Backers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFja2Vyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Backers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFja2Vyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Backers/SelectBacker.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFja2Vyc1xTZWxlY3RCYWNrZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Creators/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRvcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Creators/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRvcnNcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Creators/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRvcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Creators/SelectCreator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRvcnNcU2VsZWN0Q3JlYXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Creators/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRvcnNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Posts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Projects/AddMedia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcQWRkTWVkaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Projects/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Projects/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Projects/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Projects/Fund.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcRnVuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Projects/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/RewardPackages/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV3YXJkUGFja2FnZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/RewardPackages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV3YXJkUGFja2FnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Shared/_SelectUserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TZWxlY3RVc2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rouva/Source/Repos/RegenerationAPI/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2z3odzdr6f

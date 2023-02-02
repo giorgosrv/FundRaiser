@@ -1,0 +1,84 @@
+﻿@page "{id}/{searchString?}"
+
+@model FundRaiser.Pages.Backers.Dashboard
+
+@{
+    ViewData["Title"] = "Backer's dashboard";
+    Layout = "Shared/_SelectUserLayout";
+}
+
+<!DOCTYPE html>
+<body class="bg-dark text-white">
+    <div>
+        <a style="top:1%; right:5%; position:absolute;" class="btn btn-light" asp-page="/Backers/Edit" asp-route-id="@Model.Id">Edit Backer</a>
+    </div>
+
+    <form>
+        <p>
+            Project Title: &nbsp; <input type="text" asp-for="SearchString"/>
+            <br/>
+            <br/>
+            Category: &nbsp;
+            <select asp-for="Category" asp-items="Model.Categories">
+                <option value="">All</option></select>
+            <br/>
+            <br/>
+            <input type="submit" value="Search"/>
+        </p>
+    </form>
+
+    <a asp-page="/Backers/Activity" asp-route-id="@Model.Id" class="btn btn-light">My activity</a>
+
+    <table class="table text-white">
+        <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Projects![0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Projects![0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Projects![0].Category)
+            </th>
+            <th>
+                Financial Goal
+            </th>
+            <th>
+                Current Amount
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model.Projects!.OrderByDescending(p => (p.CurrentFund * 100 / p.FinancialGoal)).ToList())
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FinancialGoal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CurrentFund)
+                </td>
+                <td>
+                    <a asp-page="/Projects/Fund" asp-route-id ="@item.Id" asp-route-backerId="@Model.Id" class="btn btn-light">Fund</a>
+                </td>
+                <td>
+                   <a asp-page="/Projects/Details" asp-route-id ="@item.Id" class="btn btn-light">Details</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</body>
+    

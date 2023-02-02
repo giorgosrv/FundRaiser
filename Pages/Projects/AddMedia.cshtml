@@ -1,0 +1,73 @@
+﻿@page "{id}"
+@model FundRaiser.Pages.Projects.AddMediaModel
+@{
+}
+<body class="bg-dark text-white">
+<table>
+    <tr>
+        <td>
+            <form method="post" enctype="multipart/form-data">
+                Upload an image file
+                <br>
+                <input type="file" asp-for="UploadImage"/><br />
+                <input type="submit" value="Upload" asp-page-handler="Image"/>
+            </form>
+        </td>
+        <td>
+            <form method="post" enctype="multipart/form-data">
+                Upload a video file
+                <br>
+                <input type="file" asp-for="UploadVideo" /><br/>
+                <input type="submit" value="Upload" asp-page-handler="Video"/>
+            </form>
+        </td>
+    </tr>
+</table>
+
+<table class="table text-white">
+    <thead>
+        <tr>
+            <th>
+                Remove Media Files
+            </th>
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+    <tr>
+        <td>
+            @foreach (var item in Model.Images.OrderByDescending(p => p.Substring(p.IndexOf("Uploads") - 1)))
+            {
+                <p style="text-align:center">
+
+                    <img src="@item.Substring(item.IndexOf("Uploads") - 1)" alt="" style="width:400px;height:300px">
+                    <br>
+                    <form method="post" style="text-align:center">
+                        <button type="submit" name="filepath" value="@item.Substring(item.IndexOf("Uploads") - 1)" asp-page-handler="Remove">Remove^</button>
+                    </form>
+                </p>
+            }
+        </td>
+        <td>
+            @foreach (var item in Model.Videos.OrderByDescending(p => p.Substring(p.IndexOf("Uploads") - 1)))
+            {
+                <p style="text-align:center">
+
+                    <video style="width:400px;height:300px;object-fit: cover;" controls>
+                        <source src="@item.Substring(item.IndexOf("Uploads") - 1)" type="video/mp4">
+                    </video>
+                    <br>
+                    <form method="post" style="text-align:center">
+                        <button type="submit" name="filepath" value="@item.Substring(item.IndexOf("Uploads") - 1)" asp-page-handler="Remove">Remove^</button>
+                    </form>
+                </p>
+            }
+        </td>
+    </tr>
+
+
+
+
+</table>
+</body>

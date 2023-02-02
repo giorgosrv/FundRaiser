@@ -1,0 +1,60 @@
+﻿@page "{id}"
+@model FundRaiser.Pages.Backers.ActivityModel
+@{
+}
+
+<body class="bg-dark text-white">
+
+    <header>
+        <h1>
+            @Model.TheBacker.FirstName 's activity
+        </h1>
+    </header>
+
+    <table class="table text-white">
+        <thead>
+            <tr>
+                <th>
+                    Date
+                </th>
+                <th>
+                    Project
+                </th>
+                <th>
+                    Amount
+                </th>
+                <th>
+                    Reward Package
+                </th>
+                <th>
+
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model.MyFunds)
+            {
+                <tr>
+                    <td>
+                        @item.CreatedAt
+                    </td>
+                    <td>
+                        @item.Project.Title
+                    </td>
+                    <td>
+                        @item.Amount
+                    </td>
+                    <td>
+                        @item.RewardPackage.Title
+                    </td>
+                    <td>
+                        <a asp-page="/Projects/Details" asp-route-id="@item.ProjectId" class="btn btn-light">Go to project</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+</body>

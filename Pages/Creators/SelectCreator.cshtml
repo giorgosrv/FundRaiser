@@ -1,0 +1,16 @@
+﻿@page
+@model FundRaiser.Pages.Creators.SelectCreator;
+
+@{
+    ViewData["Title"] = "Select creator";
+    Layout = "Shared/_SelectUserLayout";
+}
+<body class="bg-dark text-white">
+    <h1>Creator that you want to continue with!</h1>
+    <form method="post">
+        <select asp-for="Id" asp-items="Model.Options"></select>
+        <br />
+        <br/>
+        <button type="submit" class="btn btn-light">Continue</button>
+    </form>
+</body>

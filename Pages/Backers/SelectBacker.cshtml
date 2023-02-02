@@ -1,0 +1,16 @@
+﻿@page
+@model FundRaiser.Pages.Backers.SelectBacker
+
+@{
+    ViewData["Title"] = "Select backer";
+    Layout = "Shared/_SelectUserLayout";
+}
+<body class="bg-dark text-white">
+    <h1>Backer that you want to continue with!</h1>
+    <form method="post">
+        <select asp-for="Id" asp-items="Model.Options"></select>
+        <br />
+        <br/>
+        <button type="submit" class="btn btn-light">Continue</button>
+    </form>
+</body>

@@ -1,0 +1,30 @@
+﻿@page
+@model FundRaiser.Pages.Backers.CreateModel
+
+@{
+    ViewData["Title"] = "Create a Backer";
+}
+<!DOCTYPE html>
+
+<body class="bg-dark text-white">
+    <form method="post">
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email</label>
+        <input asp-for="Backer!.Email" type="email" class="form-control" id="email" size="30" required>
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">First Name</label>
+          <input asp-for="Backer!.FirstName" type="text" class="form-control" id="firstname" size="30" required>
+            <span asp-validation-for="Backer.FirstName" class="text-danger"></span>
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="exampleFormControlTextarea2">Last Name</label>
+        <input asp-for="Backer!.LastName" type="text" class="form-control" id="lastname" size="30" required>
+            <span asp-validation-for="Backer.LastName" class="text-danger"></span>
+      </div>
+      <br />
+      <button type="submit" class="btn btn-light">Submit</button>
+    </form>
+</body>

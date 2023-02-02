@@ -1,0 +1,40 @@
+﻿@page
+@model FundRaiser.Pages.Creators.CreateModel
+
+@{
+    ViewData["Title"] = "Create a Creator";
+}
+<!DOCTYPE html>
+
+<body class="bg-dark text-white">
+    <form method="post">
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Identity Id</label>
+        <input asp-for="Creator!.IdentityId" type="text" class="form-control" id="identity" size="10" required>
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email</label>
+        <input asp-for="Creator!.Email" type="email" class="form-control" id="email" size="40" required>
+    </div>
+    <br/>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Profession</label>
+            <input asp-for="Creator!.Profession" type="text" class="form-control" id="profession" size="30" required>
+      </div>
+      <br/>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">First Name</label>
+          <input asp-for="Creator!.FirstName" type="text" class="form-control" id="firstname" size="30" required>
+            <span asp-validation-for="Creator!.FirstName" class="text-danger"></span>
+      </div>
+      <br/>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea2">Last Name</label>
+        <input asp-for="Creator!.LastName" type="text" class="form-control" id="lastname" size="30" required>
+            <span asp-validation-for="Creator!.LastName" class="text-danger"></span>
+      </div>
+      <br/>
+      <button type="submit" class="btn btn-light">Submit</button>
+    </form>
+</body>

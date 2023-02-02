@@ -1,0 +1,61 @@
+﻿@page "{id}/{backerId?}"
+@model FundRaiser.Pages.Projects.Fund
+
+@{
+    ViewData["Title"] = "Fund project";
+}
+<body class="bg-dark text-white">
+
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>
+                    Available Rewared Packages
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Minimum Required Amount
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.AvailablePackages)
+            {
+            <tr>
+                    <td>
+                        @item.Title
+                    </td>
+                    <td>
+                        @item.Description
+                    </td>
+                    <td>
+                        @item.NeedToFund
+                    </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+
+    <br />
+    <br />
+
+<form method="post">
+
+        <select asp-for="SelectedPackageId" asp-items="Model.Options"></select>
+
+        <br />
+        <br />
+
+    <div class="form-group">
+             <label for="amount">Select the amount you want to fund</label>
+             <input asp-for="FundAmount" type="number" class="form-control" id="exampleFormControlInput2" min="0">
+    </div>
+    <br/>
+   
+     
+    <button type="submit" class="btn btn-primary">Fund</button>
+</form>
+</body>

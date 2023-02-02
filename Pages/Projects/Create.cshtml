@@ -1,0 +1,36 @@
+﻿@page "{id}"
+@model FundRaiser.Pages.Projects.CreateModel
+
+@{
+    ViewData["Title"] = "Projects";
+}
+<!DOCTYPE html>
+<body class="bg-dark text-white">
+    <form method="post">
+        <div class="form-group text-light">
+            <label for="exampleFormControlInput1">Title</label>
+
+            <input asp-for="Project!.Title" type="text" class="form-control" id="exampleFormControlInput1">
+            <span asp-validation-for="Project.Title" class="text-danger"></span>
+        </div>
+        <br />
+        <div class="form-group text-light">
+            <label for="exampleFormControlTextarea1">Category</label>
+            <input asp-for="Project!.Category" type="text" class="form-control" id="exampleFormControlInput2">
+            <span asp-validation-for="Project.Category" class="text-danger"></span>
+        </div>
+        <br />
+        <div class="form-group text-light">
+            <label for="exampleFormControlTextarea1">Financial Goal</label>
+            <input asp-for="Project!.FinancialGoal" type="number" class="form-control" id="exampleFormControlInput2">
+        </div>
+        <br/>
+        <div class="form-group text-light">
+            <label for="exampleFormControlTextarea1">Description</label>
+            <textarea asp-for="Project!.Description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <span asp-validation-for="Project.Description" class="text-danger"></span>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary btn-light">Submit</button>
+    </form>
+</body>

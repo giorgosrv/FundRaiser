@@ -1,0 +1,51 @@
+@page "{id}"
+@model FundRaiser.Pages.RewardPackages.CreateModel
+
+@{
+    Layout = "Shared/_SelectUserLayout";
+}
+<div class="border container" style="padding:30px;">
+    <form method="post">
+        <input type="hidden" asp-for="RewardPackage!.Id"/>
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="RewardPackage!.Title"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="RewardPackage!.Title" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4" type>
+                <label asp-for="RewardPackage!.Description"></label>
+            </div>
+            <div class="col-6">
+                <textarea asp-for="RewardPackage!.Description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="RewardPackage!.NeedToFund">Need to fund</label>
+            </div>
+            <div class="col-6">
+                <input asp-for="RewardPackage!.NeedToFund" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="RewardPackage!.ReturnAmount">Return amount</label>
+            </div>
+            <div class="col-6">
+                <input asp-for="RewardPackage!.ReturnAmount" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-3 offset-4">
+                <input style="margin-top:10%" type="submit" value="Create" class="btn btn-primary form-control"/>
+            </div>
+            <div class="col-3">
+                <a asp-page="/RewardPackages/Index" asp-route-id="@Model!.Id" style="margin-top:10%;" class="btn btn-success form-control">Back to List</a>
+            </div>
+        </div>
+    </form>
+</div>

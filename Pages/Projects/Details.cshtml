@@ -1,0 +1,112 @@
+﻿@page "{id}"
+@model FundRaiser.Pages.Projects.DetailsModel
+@{
+}
+<body class="bg-dark text-white">
+
+    <header>
+        <h1>@Html.DisplayFor(model => model.Project.Title)</h1>
+        <p>Our Goal: @Html.DisplayFor(model => model.Project.FinancialGoal) | @Html.DisplayFor(model => model.Project.CurrentFund) already funded!</p>
+        <p>@Html.DisplayFor(model => model.Project.Description)</p>
+        
+        <p>Created by @Html.DisplayFor(model => model.Project.Creator.FirstName)</p>
+    </header>
+
+    <table class="table text-white">
+        <thead>
+        <tr>
+            <th>
+                Updates
+            </th>
+            <th>
+                Funds
+            </th>
+        </tr>
+        </thead>
+        <td>
+            @foreach (var item in Model.Posts)
+            {
+                <div class="card gedf-card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                                </div>
+                                <div class="ml-2">
+                                    <div class="h7 text-muted">@(Model.Project.Creator.FirstName + ' ' + Model.Project.Creator.LastName)</div>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <a class="card-link">
+                            <h5 class="card-title">@item.Title</h5>
+                        </a>
+                        <p class="card-text">
+                            @item.Text
+                        </p>
+                    </div>
+                </div>
+            }
+        </td>
+        <td>
+            @foreach (var item in Model.Funds!)
+            {
+                <p> @item.Backer.FirstName @item.Backer.LastName has donated @item.Amount euros! </p>
+            }
+        </td>
+        
+
+    </table>
+
+    <table class="table text-white">
+        <thead>
+            <tr>
+                <th>
+                    Gallery
+                </th>
+                <th>
+
+                </th>
+            </tr>
+        </thead>
+        <tr>
+            <td>
+                @foreach (var item in Model.Images.OrderByDescending(p => p.Substring(p.IndexOf("Uploads") - 1)))
+            {
+                <p style="text-align:center">
+
+                    <img src="@item.Substring(item.IndexOf("Uploads") - 1)" alt="" style="width:400px;height:300px">
+                    <br>
+                    <br>
+                </p>
+            }
+            </td>
+            <td>
+                @foreach (var item in Model.Videos.OrderByDescending(p => p.Substring(p.IndexOf("Uploads") - 1)))
+                {
+                    <p style="text-align:center">
+
+                        <video style="width:400px;height:300px;object-fit: cover;" controls>
+                            <source src="@item.Substring(item.IndexOf("Uploads") - 1)" type="video/mp4">
+
+                        </video>
+                        <br>
+                    </p>
+                }
+            </td>
+        </tr>
+        
+       
+            
+       
+    </table>
+
+    <br />
+    <br />
+
+</body>
